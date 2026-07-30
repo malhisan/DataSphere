@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About &amp; Contact | DataSphere Club</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">DataSphere</a>
+                <p>Data Science &amp; AI Club</p>
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>
+
+                    <li>
+                        <a href="register.html">Register</a>
+                    </li>
+
+                    <li>
+                        <a href="registrations.html">
+                            Registration List
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="active" href="about.html">
+                            About &amp; Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <div class="container">
+                <p class="small-title">CLUB INFORMATION</p>
+
+                <h1>About &amp; Contact</h1>
+
+                <p>
+                    Information about DataSphere Club and how to contact
+                    the club team.
+                </p>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <div class="container">
+                <h2>Team Members</h2>
+
+                <div class="team-members">
+                    <article class="team-card">
+                        <h3>Abdulrahman ALthobaiti</h3>
+                        <p>S230023169</p>
+                        <p>Task: Home page &amp; project integration</p>
+                    </article>
+
+                    <article class="team-card">
+                        <h3>Ali Altammam</h3>
+                        <p>S240025636</p>
+                        <p>Task: Events &amp; Event-details pages</p>
+                    </article>
+
+                    <article class="team-card">
+                        <h3>Bader ALamiri</h3>
+                        <p>S210024048</p>
+                        <p>Task: Registration &amp; Registration list</p>
+                    </article>
+
+                    <article class="team-card">
+                        <h3>Mohammed Alhisan</h3>
+                        <p>S240027046</p>
+                        <p>Task: About page &amp; responsive design</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-contact-section">
+            <div class="container about-contact-layout">
+
+                <div class="about-content">
+                    <h2>About DataSphere</h2>
+
+                    <p>
+                        DataSphere is a university student club focused on
+                        data science and artificial intelligence.
+                    </p>
+
+                    <p>
+                        The club organizes workshops, seminars, and student
+                        activities that introduce technical topics and provide
+                        opportunities for practical learning.
+                    </p>
+
+                    <h3>Club Activities</h3>
+
+                    <ul class="about-list">
+                        <li>Programming and data analysis workshops</li>
+                        <li>Data visualization sessions</li>
+                        <li>Artificial intelligence seminars</li>
+                        <li>Student data competitions</li>
+                        <li>Career and CV preparation sessions</li>
+                    </ul>
+
+                    <h3>Event Participation</h3>
+
+                    <p>
+                        Students can view event information on the Events
+                        page and submit the registration form. Registration
+                        confirmation depends on the available seats for each
+                        event.
+                    </p>
+
+                    <div class="club-contact-box">
+                        <h3>Club Contact Information</h3>
+
+                        <p>
+                            <strong>Email:</strong>
+                            <a href="mailto:datasphere@seu.edu.sa">
+                                datasphere@seu.edu.sa
+                            </a>
+                        </p>
+
+                        <p>
+                            <strong>Location:</strong>
+                            Student Activities Center, Room S-108
+                        </p>
+
+                        <p>
+                            <strong>Office Hours:</strong>
+                            Sunday and Tuesday, 12:00 PM – 2:00 PM
+                        </p>
+                    </div>
+                </div>
+
+                <form
+                    class="contact-form"
+                    action="#"
+                    method="post"
+                >
+                    <h2>Contact the Club</h2>
+
+                    <p class="form-description">
+                        Complete the form to send a message to the club team.
+                    </p>
+
+                    <div class="form-group">
+                        <label for="contact-name">
+                            Full Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contact-name"
+                            name="contact_name"
+                            placeholder="Enter your full name"
+                            minlength="3"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">
+                            Email Address *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="contact-email"
+                            name="contact_email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-subject">
+                            Subject *
+                        </label>
+
+                        <select
+                            id="contact-subject"
+                            name="contact_subject"
+                            required
+                        >
+                            <option value="">
+                                Choose a subject
+                            </option>
+
+                            <option value="event">
+                                Event Information
+                            </option>
+
+                            <option value="registration">
+                                Registration Question
+                            </option>
+
+                            <option value="membership">
+                                Club Membership
+                            </option>
+
+                            <option value="suggestion">
+                                Suggestion
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message">
+                            Message *
+                        </label>
+
+                        <textarea
+                            id="contact-message"
+                            name="contact_message"
+                            rows="7"
+                            placeholder="Enter your message"
+                            minlength="10"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button class="button" type="submit">
+                        Send Message
+                    </button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <h3>DataSphere</h3>
+                <p>Data Science &amp; AI Club</p>
+            </div>
+
+            <p>&copy; 2026 DataSphere Club</p>
+        </div>
+    </footer>
+</body>
+</html>
