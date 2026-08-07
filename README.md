@@ -11,29 +11,18 @@
 DataSphere is a campus events website for a university Data Science and Artificial Intelligence Club.  
 The project provides one place where students can view upcoming workshops, seminars, competitions, and event details. Students can also register for events, while stored registrations are displayed in an organized table.
 
-## Tech and Framework
+## Technologies and Tools
 
 ### Development
 
-[![HTML](https://skillicons.dev/icons?i=html&theme=dark)](https://developer.mozilla.org/en-US/docs/Web/HTML)&nbsp;&nbsp;
-[![CSS](https://skillicons.dev/icons?i=css&theme=dark)](https://developer.mozilla.org/en-US/docs/Web/CSS)&nbsp;&nbsp;
-[![PHP](https://skillicons.dev/icons?i=php&theme=dark)](https://www.php.net)&nbsp;&nbsp;
-[![VS Code](https://skillicons.dev/icons?i=vscode&theme=dark)](https://code.visualstudio.com)&nbsp;&nbsp;
-[![Git](https://skillicons.dev/icons?i=git&theme=dark)](https://git-scm.com)&nbsp;&nbsp;
-[![GitHub](https://skillicons.dev/icons?i=github&theme=dark)](https://github.com)
+[![Development](https://skillicons.dev/icons?i=html,css,vscode,git,github&theme=light)](https://skillicons.dev)
 
-### Data Storage
+### Server and Data Storage
 
-- CSV files for event information and student registrations
-- PHP file reading and writing
-- PHP loops for displaying stored records
-
-### Local Server
-
-- XAMPP
-- Apache
-- PHP
-
+[![XAMPP](https://img.shields.io/badge/XAMPP-FB7A24?style=for-the-badge&logo=xampp&logoColor=white)](https://www.apachefriends.org/)
+[![Apache](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white)](https://httpd.apache.org/)
+[![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
+[![CSV](https://img.shields.io/badge/CSV-217346?style=for-the-badge&logoColor=white)](https://datatracker.ietf.org/doc/html/rfc4180)
 ## Features
 
 - Responsive campus events website
