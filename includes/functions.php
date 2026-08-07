@@ -7,11 +7,11 @@ function loadEvents($filePath)
       return $events;
     }
     $file = fopen($filePath, "r");
-    if($file === fales){
+    if($file === false){
       return $events;
     }
     $headings = fgetcsv($file);
-    while(($row=fgtcsv($file)) !== false){
+    while(($row=fgetcsv($file)) !== false){
       if(count($headings) === count($row)){
         $events[] = array_combine($headings, $row);
       }
@@ -21,13 +21,13 @@ function loadEvents($filePath)
   }
 function escape($value)
   {
-    return htmlspacialchars((string) $value, ENT_QUOTES, "UTF-8");
+    return htmlspecialchars((string) $value, ENT_QUOTES, "UTF-8");
   }
-function formatEventData($data)
+function formatEventDate($date)
 {
-  $timestamp = strtotime($data);
+  $timestamp = strtotime($date);
   if($timestamp === false){
-    return $data;
+    return $date;
   }
-  return data("j F Y", $timestamp);
+  return date("j F Y", $timestamp);
 }
