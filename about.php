@@ -198,7 +198,7 @@ require __DIR__ . "/includes/header.php";
                 </div>
             </div>
 
-            <div>
+            <div class="contact-column">
                 <?php if ($successMessage !== "") { ?>
 
                     <div class="form-message success-message">
