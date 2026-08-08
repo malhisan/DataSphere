@@ -35,7 +35,7 @@ require __DIR__ . "/includes/header.php";
                             
                             <img
                                 class="event-photo"
-                                src="<?= escape($event["image"]) ?>"
+                                src="assets/<?= escape($event["image"]) ?>"
                                 alt="<?= escape($event["title"]) ?> event">
 
                             <div class="event-information">
@@ -51,7 +51,7 @@ require __DIR__ . "/includes/header.php";
                                     <?= escape($event["title"]) ?>
                                 </h2>
                                 <p>
-                                    <?= escape($event["description"]) ?>
+                                    <?= escape($event["short_description"]) ?>
                                 </p>
                                 <p class="event-place">
                                     <?= escape($event["time"]) ?> |

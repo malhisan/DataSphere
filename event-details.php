@@ -64,7 +64,7 @@ require __DIR__ . "/includes/header.php";
                 </h1>
 
                 <p>
-                    <?= escape($selectedEvent["description"]) ?>
+                    <?= escape($selectedEvent["short_description"]) ?>
                 </p>
             </div>
         </section>
@@ -75,13 +75,13 @@ require __DIR__ . "/includes/header.php";
                 <article class="event-main-content">
                     <img
                         class="details-event-photo"
-                        src="<?= escape($selectedEvent["image"]) ?>"
+                        src="assets/<?= escape($selectedEvent["image"]) ?>"
                         alt="<?= escape($selectedEvent["title"]) ?> event">
 
                     <h2>About This Event</h2>
 
                     <p>
-                        <?= escape($selectedEvent["description"]) ?>
+                        <?= escape($selectedEvent["full_description"]) ?>
                     </p>
 
                     <h2>Who Can Attend?</h2>
