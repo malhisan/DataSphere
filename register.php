@@ -112,12 +112,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             !file_exists($registrationsFile) ||
             filesize($registrationsFile) === 0;
 
-        $file = fopen($registrationsFile, "a");
+        $$file = fopen($registrationsFile, "a");
 
 if ($file === false) {
+    $errors[] = "The registration could not be saved.";
+} else {
     flock($file, LOCK_EX);
-            $errors[] = "The registration could not be saved.";
-        } else {
             if ($fileIsEmpty) {
                 fputcsv($file, [
                     "full_name",
