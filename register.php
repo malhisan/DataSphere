@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $notes = trim($_POST["notes"] ?? "");
     $confirmation = isset($_POST["confirmation"]);
 
-    if (strlen($fullName) < 3) {
+    if (mb_strlen($fullName) < 3) {
         $errors[] = "Full name must contain at least 3 characters.";
     }
 
@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $errors[] = "Select a valid study level.";
     }
 
-    if (strlen($notes) > 500) {
+    if (mb_strlen($notes) > 500) {
         $errors[] = "Additional notes must not exceed 500 characters.";
     }
 
@@ -114,7 +114,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         $file = fopen($registrationsFile, "a");
 
-        if ($file === false) {
+if ($file !== false) {
+    flock($file, LOCK_EX);
             $errors[] = "The registration could not be saved.";
         } else {
             if ($fileIsEmpty) {
@@ -130,6 +131,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     "registration_date",
                     "status"
                 ]);
+                fflush($file);
+    flock($file, LOCK_UN);
+    fclose($file);
             }
 
             fputcsv($file, [
