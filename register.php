@@ -115,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $$file = fopen($registrationsFile, "a");
 
 if ($file === false) {
-    die("ERROR: Cannot open registrations.csv for writing. Path: " . $registrationsFile);
+    $errors[] = "The registration could not be saved.";
 } else {
     flock($file, LOCK_EX);
             if ($fileIsEmpty) {
