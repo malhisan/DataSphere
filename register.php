@@ -131,9 +131,7 @@ if ($file !== false) {
                     "registration_date",
                     "status"
                 ]);
-                fflush($file);
-    flock($file, LOCK_UN);
-    fclose($file);
+            
             }
 
             fputcsv($file, [
@@ -148,8 +146,11 @@ if ($file !== false) {
                 date("Y-m-d"),
                 "Confirmed"
             ]);
+    fflush($file);
+    flock($file, LOCK_UN);
+    fclose($file);
+}
 
-            fclose($file);
 
             $successMessage =
                 "Your registration has been confirmed successfully.";
