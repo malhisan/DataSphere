@@ -76,6 +76,7 @@ require __DIR__ . "/includes/header.php";
                             <th scope="col">Student Name</th>
                             <th scope="col">Student ID</th>
                             <th scope="col">Event</th>
+                            <th scope="col">Study Level</th>
                             <th scope="col">Registration Date</th>
                             <th scope="col">Status</th>
                         </tr>
@@ -86,7 +87,7 @@ require __DIR__ . "/includes/header.php";
                         <?php if (empty($registrations)) { ?>
 
                             <tr>
-                                <td colspan="6">
+                                <td colspan="7">
                                     No registrations are currently available.
                                 </td>
                             </tr>
@@ -117,6 +118,12 @@ require __DIR__ . "/includes/header.php";
                                     <td>
                                         <?= escape(
                                             $registration["event_title"]
+                                        ) ?>
+                                    </td>
+
+                                    <td>
+                                        <?= escape(
+                                            $registration["study_level"]
                                         ) ?>
                                     </td>
 
