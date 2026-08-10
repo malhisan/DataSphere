@@ -115,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $$file = fopen($registrationsFile, "a");
 
 if ($file === false) {
-    $errors[] = "The registration could not be saved.";
+    die("Cannot open file: " . $registrationsFile);
 } else {
     flock($file, LOCK_EX);
             if ($fileIsEmpty) {
