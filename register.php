@@ -146,9 +146,9 @@ if ($file === false) {
                 date("Y-m-d"),
                 "Confirmed"
             ]);
-    fflush($file);
-    flock($file, LOCK_UN);
-    fclose($file);
+            fflush($file);
+            flock($file, LOCK_UN);
+            fclose($file);
 
 
 
