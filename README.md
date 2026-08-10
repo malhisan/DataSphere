@@ -53,7 +53,7 @@ The project provides one place where students can view upcoming workshops, semin
 ## Credits
 
 [<img src="https://github.com/althobiti433.png" width="50px;" alt="Abdulrahman Althobaiti"/>](https://github.com/althobiti433)&nbsp;&nbsp;
-[<img src="https://github.com/USERNAME_2.png" width="50px;" alt="Ali Altammam"/>](https://github.com/USERNAME_2)&nbsp;&nbsp;
-[<img src="https://github.com/USERNAME_3.png" width="50px;" alt="Bader Alamiri"/>](https://github.com/USERNAME_3)&nbsp;&nbsp;
+[<img src="https://github.com/AlialTamami03.png" width="50px;" alt="Ali Altammam"/>](https://github.com/AlialTamami03)&nbsp;&nbsp;
+[<img src="https://github.com/Balamiri18.png" width="50px;" alt="Bader Alamiri"/>](https://github.com/Balamiri18)&nbsp;&nbsp;
 [<img src="https://github.com/malhisan.png" width="50px;" alt="Mohammed Alhisan"/>](https://github.com/malhisan)
 
