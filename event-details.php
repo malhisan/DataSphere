@@ -76,7 +76,7 @@ require __DIR__ . "/includes/header.php";
                     <img
                         class="details-event-photo"
                         src="assets/<?= escape($selectedEvent["image"]) ?>"
-                        alt="<?= escape($selectedEvent["title"]) ?> event">
+                        alt="<?= escape($selectedEvent["image_alt"]) ?>">
 
                     <h2>About This Event</h2>
 

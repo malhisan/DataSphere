@@ -7,6 +7,7 @@ $activePage = "events";
 
 $eventsFile = __DIR__ . "/data/events.csv";
 $events = loadEvents($eventsFile);
+$events = sortEventsByDate($events);
 
 require __DIR__ . "/includes/header.php";
 
@@ -36,7 +37,7 @@ require __DIR__ . "/includes/header.php";
                             <img
                                 class="event-photo"
                                 src="assets/<?= escape($event["image"]) ?>"
-                                alt="<?= escape($event["title"]) ?> event">
+                                alt="<?= escape($event["image_alt"]) ?>">
 
                             <div class="event-information">
                                 <p class="event-category">

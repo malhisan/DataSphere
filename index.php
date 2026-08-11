@@ -8,6 +8,7 @@ $activePage = "home";
 $eventsFile = __DIR__ . "/data/events.csv";
 
 $events = loadEvents($eventsFile);
+$events = getUpcomingEvents($events);
 
 $upcomingEvents = array_slice($events, 0, 3);
 
