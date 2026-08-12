@@ -20,7 +20,7 @@ if(!isset($activePage)){
     <header>
       <div class="container header-content">
         <div class="logo">
-          <a href="index.php">DataShere</a>
+          <a href="index.php">DataSphere</a>
           <p>Data Science &amp; AI Club</p>
         </div>
         <nav>
